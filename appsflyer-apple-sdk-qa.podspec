@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
     s.ios.frameworks = 'Security', 'SystemConfiguration', 'CoreTelephony'
     s.osx.frameworks  = 'Security'
 	s.default_subspecs = 'Main'
+    s.resource_bundles = {'AppsFlyerFramework' => ['Resources/PrivacyInfo.xcprivacy']}
 
     s.subspec 'Main' do |ss|
        ss.ios.vendored_frameworks = 'binaries/xcframework/full/AppsFlyerLib.xcframework'
